@@ -1,0 +1,6 @@
+2021-09-12 21:41:07 6400 [Note] Event Scheduler: Loaded 0 events
+2021-09-12 21:41:07 6400 [Note] D:\coding\ETEC_DS_II\usbwebserver/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.6.34'  socket: ''  port: 3307  MySQL Community Server (GPL)
+2021-09-12 22:32:54 15180 [Note] Event Scheduler: Loaded 0 events
+2021-09-12 22:32:54 15180 [Note] D:\coding\ETEC_DS_II\usbwebserver/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.6.34'  socket: ''  port: 3306  MySQL Community Server (GPL)
