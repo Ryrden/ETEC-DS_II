@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".sobre">
+
+    <TextView
+        android:id="@+id/txtChocoFeliz3"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="48dp"
+        android:text="ChocoFeliz"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSobre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSobre"
+        android:layout_width="274dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="18dp"
+        android:text="Nossa empresa trabalha com chocolates!"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChocoFeliz3" />
+
+    <Button
+        android:id="@+id/btnBack1"
+        android:layout_width="208dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="VOLTAR PARA O MENU"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSobre" />
+</androidx.constraintlayout.widget.ConstraintLayout>
