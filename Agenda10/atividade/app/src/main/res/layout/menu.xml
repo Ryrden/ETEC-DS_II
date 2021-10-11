@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FF0000"
+    tools:context=".menu">
+
+    <TextView
+        android:id="@+id/txtChocoFeliz"
+        android:layout_width="253dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginBottom="79dp"
+        android:text="ChocoFeliz"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAboutCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAboutCompany"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#F8F8F8"
+        android:text="SOBRE A EMPRESA"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChocoFeliz" />
+
+    <Button
+        android:id="@+id/btnTel"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="296dp"
+        android:backgroundTint="#F8F8F8"
+        android:text="TELEFONE"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAboutCompany" />
+</androidx.constraintlayout.widget.ConstraintLayout>
