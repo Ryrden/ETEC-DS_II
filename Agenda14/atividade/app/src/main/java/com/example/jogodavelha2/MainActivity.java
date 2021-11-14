@@ -74,12 +74,14 @@ public class MainActivity extends AppCompatActivity {
                 btn31Prog, btn32Prog, btn33Prog};
 
 
+        
         inicializaMatrizVerificacao();
+        //O código não aceitou de jeito nenhum criar apenas um int, substituiram por vetor
+        int[] line = new int[1];
+        int[] column =  new int[1];
+        //Acho que solucionei o problema.
         for (int i = 0; i < 9; i++){
             int intern_i = i;
-            //O código não aceitou de jeito nenhum criar apenas um int, substituiram por vetor
-            int[] line = new int[1];
-            int[] column =  new int[1];
             line[0] = column[0] = 0;
             buttons[i].setOnClickListener(new View.OnClickListener() {
                 @Override
