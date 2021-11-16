@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean verificaGanhador(){
         boolean ganhador = false;
 
-        //não está retornando quem ganhou.
-
         //horizontal e vertical!
         for (int i = 0; i < 3; i++){
             if((matriz[i][0].equals(matriz[i][1]) && matriz[i][0].equals(matriz[i][2]))
@@ -76,24 +74,21 @@ public class MainActivity extends AppCompatActivity {
 
         
         inicializaMatrizVerificacao();
-        //O código não aceitou de jeito nenhum criar apenas um int, substituiram por vetor
-        int[] line = new int[1];
-        int[] column =  new int[1];
-        //Acho que solucionei o problema.
         for (int i = 0; i < 9; i++){
             int intern_i = i;
-            line[0] = column[0] = 0;
             buttons[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    int line = intern_i / 3;
+                    int column =  intern_i % 3;
                     buttons[intern_i].setText(jogador);
                     buttons[intern_i].setClickable(false);
-                    matriz[line[0]][column[0]] = jogador;
-                    column[0] += 1;
+                    matriz[line][column] = jogador;
+                    column += 1;
 
-                    if (column[0] == 2){
-                        column[0] = 0;
-                        line[0] += 1;
+                    if (column == 2){
+                        column = 0;
+                        line += 1;
                     }
                     if(verificaGanhador()){
                         txtJogadorProg.setText("Ganhador: "+jogador);
